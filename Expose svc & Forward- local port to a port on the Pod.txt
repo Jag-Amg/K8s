@@ -1,0 +1,22 @@
+  Day-1 K8s Sangamesh Sir                                        Date: 25-02-2024
+
+  Exposing svc & port forwarding: from local port to port on the svc
+
+  502  minikube status
+  503  kubectl get no
+  504  kubectl get no -o wide
+  505  kubectl describe no minikube
+  506  kubectl run ja-nginx --image=nginx
+  507  kubectl get po
+  508  kubectl get po -o wide
+  509  kubectl describe po ja-nginx
+  510  kubectl delete po ja-nginx
+  511  kubectl run ja-nginx1 --image=nginx
+  512  kubectl expose po/ja-nginx1 --type="NodePort" --port 80
+  513  kubectl get svc
+  514  kubectl get svc ja-nginx1 -o wide
+  515  kubectl port-forward service/ja-nginx1 31087:80
+  516  history
+  517  kubectl get svc -o wide
+  518  kubectl describe svc ja-nginx1
+  519  history
